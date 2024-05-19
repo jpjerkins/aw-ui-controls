@@ -1,0 +1,41 @@
+created: 20240423184433100
+modified: 20240423184541968
+tags: 
+title: $:/plugins/pjerkins/aw-ui-controls/Macros/ActionBarMacros
+
+\define actionMenuStateTiddlerName() $:/temp/$(currentTiddler)$/action-menu-state
+
+\define openActionBarActions()
+<$action-setfield $tiddler=<<actionMenuStateTiddlerName>> $value="show-action-menu" />
+\end
+
+\define closeActionBarActions()
+<$action-deletetiddler $tiddler=<<actionMenuStateTiddlerName>> />
+\end
+
+\define threeDotMenu()
+<$reveal state=<<actionMenuStateTiddlerName>> type="nomatch" text="show-action-menu">
+    <$messagecatcher $tm-navigate=<<openActionBarActions>> >
+        <$link>
+            <span style="width: 2em; font-weight: bold;">&#8942;</span>
+        </$link>
+    </$messagecatcher>
+</$reveal>
+<$reveal state=<<actionMenuStateTiddlerName>> type="match" text="show-action-menu">
+    <$messagecatcher $tm-navigate=<<closeActionBarActions>> >
+        <$link>
+            <span style="width: 2em; font-weight: bold;">&times;</span>
+        </$link>
+    </$messagecatcher>
+</$reveal>
+\end
+
+\define actionBar(controlTagName)
+<$reveal state=<<actionMenuStateTiddlerName>> type="match" text="show-action-menu">
+    <div>
+        <$list filter="[all[shadows+tiddlers]tag[$controlTagName$]]" variable=template>
+            <$transclude tiddler=<<template>> />
+        </$list>
+    </div>
+</$reveal>
+\end
