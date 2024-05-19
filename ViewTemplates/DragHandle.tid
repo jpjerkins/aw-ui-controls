@@ -1,0 +1,20 @@
+created: 20240519000820261
+creator: jpjerkins
+modified: 20240519000820261
+modifier: jpjerkins
+tags: 
+title: $:/plugins/pjerkins/aw-ui-controls/ViewTemplates/DragHandle
+
+<style>
+.draggable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+</style>
+
+<$draggable
+ tag="span"
+ tiddler=<<currentTiddler>>
+ class="draggable" >
+    &#9776;
+</$draggable>
