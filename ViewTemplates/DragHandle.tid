@@ -16,5 +16,7 @@ title: $:/plugins/pjerkins/aw-ui-controls/ViewTemplates/DragHandle
  tag="span"
  tiddler=<<currentTiddler>>
  class="draggable" >
+    <$slot $name="before" />
     &#9776;
+    <$slot $name="after" />
 </$draggable>
