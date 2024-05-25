@@ -3,8 +3,13 @@ modified: 20240423184541968
 tags: $:/tags/Stylesheet
 title: $:/plugins/pjerkins/aw-ui-controls/Styles/ThreeDotMenu
 
-span.three-dot-menu {
+.three-dot-menu {
     color: <<color "foreground">>;
-    background-color: <<color "menubar-background">>;
-    width: 1.5em; font-weight: bold; border: solid 1px #888; border-radius:0.5em; display: inline-block; text-align: center;
+    background-color: <<color "dropdown-tab-background">>;
+    width: 1.5em;
+    font-weight: bold;
+    border: solid 1px <<color "dropdown-tab-background">>;
+    border-radius:0.5em;
+    display: inline-block;
+    text-align: center;
 }

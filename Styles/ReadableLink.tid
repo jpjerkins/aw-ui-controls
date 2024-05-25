@@ -1,0 +1,16 @@
+created: 20240423184433100
+modified: 20240423184541968
+tags: $:/tags/Stylesheet
+title: $:/plugins/pjerkins/aw-ui-controls/Styles/ReadableLink
+
+.readable-link {
+    color: <<color "foreground">>;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.readable-link:hover {
+    color: <<color "foreground">>;
+    text-decoration: underline;
+    font-weight: bold;
+}

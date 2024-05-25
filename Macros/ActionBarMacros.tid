@@ -18,14 +18,14 @@ title: $:/plugins/pjerkins/aw-ui-controls/Macros/ActionBarMacros
 <$reveal state=<<actionMenuStateTiddlerName>> type="nomatch" text="show-action-menu">
     <$messagecatcher $tm-navigate=<<openActionBarActions>> >
         <$link>
-            <span class="three-dot-menu" style="width: 1.5em; font-weight: bold; border: solid 1px #888; border-radius:0.5em; display: inline-block; text-align: center;" >&#8942;</span>
+            <span class="three-dot-menu">&#8942;</span>
         </$link>
     </$messagecatcher>
 </$reveal>
 <$reveal state=<<actionMenuStateTiddlerName>> type="match" text="show-action-menu">
     <$messagecatcher $tm-navigate=<<closeActionBarActions>> >
         <$link>
-            <span class="three-dot-menu" style="width: 1.5em; font-weight: bold; border: solid 1px #888; border-radius:0.5em; display: inline-block; text-align: center;" >&times;</span>
+            <span class="three-dot-menu">&times;</span>
         </$link>
     </$messagecatcher>
 </$reveal>
