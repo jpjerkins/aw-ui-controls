@@ -33,7 +33,7 @@ title: $:/plugins/pjerkins/aw-ui-controls/Macros/ActionBarMacros
 
 \define actionBar(controlTagName)
 <$reveal state=<<actionMenuStateTiddlerName>> type="match" text="show-action-menu">
-    <div>
+    <div class="task-action-bar-container">
         <$list filter="[all[shadows+tiddlers]tag[$controlTagName$]]" variable=template>
             <$transclude tiddler=<<template>> />
         </$list>

@@ -1,0 +1,11 @@
+created: 20240423184433100
+modified: 20240423184541968
+tags: $:/tags/Stylesheet
+title: $:/plugins/pjerkins/aw-ui-controls/Styles/TaskActionBarContainer
+
+.task-action-bar-container {
+    display:flex;
+    display:-webkit-flex;
+    flex: 0 0 0;
+    -webkit-flex: 0 0 0;
+}
