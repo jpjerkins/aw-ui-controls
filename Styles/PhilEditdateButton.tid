@@ -1,0 +1,15 @@
+created: 20240423184433100
+modified: 20240423184541968
+tags: $:/tags/Stylesheet
+title: $:/plugins/pjerkins/aw-ui-controls/Styles/PhilEditdateButton
+
+.phil-editdate-button {
+    height:1.5em;
+    width:1.5em;
+    padding:0;
+    flex-direction: column;
+    display:flex;
+    display:-webkit-flex;
+    flex: 0 0 0;
+    -webkit-flex: 0 0 0;
+}
